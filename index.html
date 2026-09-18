@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tu Marca | Comodidad que se siente</title>
+        <meta name="description" content="Descubre nuestra colección de pijamas y productos para disfrutar de comodidad, estilo y bienestar.">
+        <!-- Favicon -->
+        <link rel="icon" href="static/img/favicon.png" type="image/png">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="static/css/index.css">
+    </head>
+
+    <body>
+        <!-- =====================================================
+            BARRA SUPERIOR
+        ====================================================== -->
+        <div class="top-bar">
+            <p>✨ Envíos a todo Colombia · Compra segura · Atención personalizada</p>
+        </div>
+
+        <!-- =====================================================
+            NAVBAR
+        ====================================================== -->
+        <header class="header">
+            <nav class="navbar">
+                <!-- Logo -->
+                <a href="#inicio" class="logo navbar-logo">
+                    <img src="static/img/Logo_DamaLuna.png" alt="Logo">
+                    <span>DamaLuna</span>
+                </a>
+                <!-- Navegación desktop -->
+                <div class="nav-links">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#categorias">Categorías</a>
+                    <a href="#destacados">Destacados</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+                <!-- Botones -->
+                <div class="nav-actions">
+                    <a href="#contacto" class="nav-contact">
+                        Contáctanos
+                    </a>
+                    <!-- Botón menú móvil -->
+                    <button class="menu-toggle"
+                            id="menu-toggle"
+                            aria-label="Abrir menú"
+                            aria-expanded="false">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+            <!-- Menú móvil -->
+            <div class="mobile-menu" id="mobile-menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#categorias">Categorías</a>
+                <a href="#destacados">Destacados</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </header>
+
+        <main>
+            <!-- =================================================
+                HERO
+            ================================================== -->
+            <section class="hero" id="inicio">
+                <div class="hero-content">
+                    <h1>
+                        Comodidad que
+                        <span>se siente.</span>
+                    </h1>
+                    <p>
+                        Diseños pensados para acompañarte en tus momentos
+                        de descanso, bienestar y tranquilidad.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#destacados" class="btn btn-primary">
+                            Descubrir productos
+                        </a>
+                        <a href="#nosotros" class="btn btn-secondary">
+                            Conócenos
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="static/img/hero/hero.jpg"
+                        alt="Nueva colección">
+                </div>
+            </section>
+
+            <!-- =================================================
+                CATEGORÍAS
+            ================================================== -->
+            <section class="categories section" id="categorias">
+                <div class="section-heading">
+                    <span class="section-label">
+                        DESCUBRE
+                    </span>
+                    <h2>
+                        Encuentra tu estilo
+                    </h2>
+                    <p>
+                        Explora nuestras categorías y encuentra aquello
+                        que está hecho para ti.
+                    </p>
+                </div>
+                <div class="categories-grid">
+                    <!-- Categoría 1 -->
+                    <a href="#destacados" class="category-card">
+                        <div class="category-image">
+                            <img src="static/img/categorias/pijamas.jpg"
+                                alt="Hombre">
+                        </div>
+                        <div class="category-info">
+                            <h3>Hombre</h3>
+                            <span>Descubrir →</span>
+                        </div>
+                    </a>
+                    <!-- Categoría 2 -->
+                    <a href="#destacados" class="category-card">
+                        <div class="category-image">
+                            <img src="static/img/categorias/ropa.jpg"
+                                alt="Mujer">
+                        </div>
+                        <div class="category-info">
+                            <h3>Mujer</h3>
+                            <span>Descubrir →</span>
+                        </div>
+                    </a>
+                    <!-- Categoría 3 -->
+                    <a href="#destacados" class="category-card">
+                        <div class="category-image">
+                            <img src="static/img/categorias/hogar.jpg"
+                                alt="Niños">
+                        </div>
+                        <div class="category-info">
+                            <h3>Niños</h3>
+                            <span>Descubrir →</span>
+                        </div>
+                    </a>
+                    <!-- Categoría 4 -->
+                    <a href="#destacados" class="category-card">
+                        <div class="category-image">
+                            <img src="static/img/categorias/accesorios.jpg"
+                                alt="Pantuflas y Babuchas">
+                        </div>
+                        <div class="category-info">
+                            <h3>Pantuflas y Babuchas</h3>
+                            <span>Descubrir →</span>
+                        </div>
+                    </a>
+                    <!-- Categoría 5 -->
+                    <a href="#destacados" class="category-card">
+                        <div class="category-image">
+                            <img src="static/img/categorias/especiales.jpg"
+                                alt="Articulos para el hogar">
+                        </div>
+                        <div class="category-info">
+                            <h3>Articulos para el hogar</h3>
+                            <span>Descubrir →</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- =================================================
+                BENEFICIOS
+            ================================================== -->
+            <section class="benefits">
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div>
+                            <h3>Hecho con amor</h3>
+                            <p>
+                                Cada detalle pensado para ti.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div>
+                            <h3>Calidad</h3>
+                            <p>
+                                Materiales seleccionados.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-truck"></i>
+                        </div>
+                        <div>
+                            <h3>Envíos nacionales</h3>
+                            <p>
+                                Recibe tu pedido donde estés.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <div>
+                            <h3>Atención personalizada</h3>
+                            <p>
+                                Estamos aquí para ayudarte.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- =================================================
+                BANNER PRINCIPAL
+            ================================================== -->
+            <section class="featured-banner section">
+                <div class="banner-image">
+                    <img src="static/img/banners/banner-principal.jpg"
+                        alt="Colección destacada">
+                </div>
+                <div class="banner-content">
+                    <span class="section-label">
+                        MOMENTOS PARA TI
+                    </span>
+                    <h2>
+                        Tu descanso también
+                        merece estilo.
+                    </h2>
+                    <p>
+                        Piezas diseñadas para que cada momento en casa
+                        se sienta especial.
+                    </p>
+                    <a href="#categorias" class="btn btn-primary">
+                        Ver productos
+                    </a>
+                </div>
+            </section>
+
+            <!-- =================================================
+                PRODUCTOS DESTACADOS
+            ================================================== -->
+            <section class="featured section" id="destacados">
+                <div class="section-heading">
+                    <span class="section-label">
+                        FAVORITOS
+                    </span>
+                    <h2>
+                        Destacados
+                    </h2>
+                    <p>
+                        Algunos de nuestros favoritos para ti.
+                    </p>
+                </div>
+                <div class="products-grid">
+                    <!-- Producto 1 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="static/img/productos/producto-1.jpg"
+                                alt="Producto destacado 1">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">
+                                Pijamas
+                            </span>
+                            <h3>
+                                Nombre del producto
+                            </h3>
+                        </div>
+                    </article>
+                    <!-- Producto 2 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="static/img/productos/producto-2.jpg"
+                                alt="Producto destacado 2">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">
+                                Pijamas
+                            </span>
+                            <h3>
+                                Nombre del producto
+                            </h3>
+                        </div>
+                    </article>
+                    <!-- Producto 3 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="static/img/productos/producto-3.jpg"
+                                alt="Producto destacado 3">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">
+                                Hogar
+                            </span>
+                            <h3>
+                                Nombre del producto
+                            </h3>
+                        </div>
+                    </article>
+                    <!-- Producto 4 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="static/img/productos/producto-4.jpg"
+                                alt="Producto destacado 4">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">
+                                Especiales
+                            </span>
+                            <h3>
+                                Nombre del producto
+                            </h3>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- =================================================
+                BANNER SECUNDARIO
+            ================================================== -->
+            <section class="secondary-banner section">
+                <div class="secondary-banner-content">
+                    <span class="section-label">
+                        PARA TU HOGAR
+                    </span>
+                    <h2>
+                        Pequeños detalles,
+                        grandes momentos.
+                    </h2>
+                    <p>
+                        Descubre piezas que hacen de tu espacio
+                        un lugar todavía más especial.
+                    </p>
+                    <a href="#contacto" class="btn btn-secondary">
+                        Descubrir más
+                    </a>
+                </div>
+                <div class="secondary-banner-image">
+                    <img src="static/img/banners/banner-hogar.jpg"
+                        alt="Productos para el hogar">
+                </div>
+            </section>
+
+            <!-- =================================================
+                NOSOTROS / MARCA
+            ================================================== -->
+            <section class="about section" id="nosotros">
+                <div class="about-image">
+                    <img src="static/img/nosotros/nosotros.jpg"
+                        alt="Nuestra marca">
+                </div>
+                <div class="about-content">
+                    <span class="section-label">
+                        SOBRE NOSOTROS
+                    </span>
+                    <h2>
+                        Pensado para hacerte
+                        sentir bien.
+                    </h2>
+                    <p>
+                        Creemos que la comodidad y el estilo pueden ir
+                        de la mano. Por eso creamos productos pensados
+                        para acompañarte en los pequeños momentos
+                        que hacen especial cada día.
+                    </p>
+                    <p>
+                        Cuidamos cada detalle para ofrecerte una
+                        experiencia cercana, bonita y especial.
+                    </p>
+                    <a href="#contacto" class="btn btn-primary">
+                        Conoce más
+                    </a>
+                </div>
+            </section>
+
+            <!-- =================================================
+                FRASE / TESTIMONIO
+            ================================================== -->
+            <section class="quote-section">
+                <div class="quote-content">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <blockquote>
+                        “Porque sentirte cómod@ también es
+                        una forma de quererte.”
+                    </blockquote>
+                    <span>
+                        — DamaLuna
+                    </span>
+                </div>
+            </section>
+
+            <!-- =================================================
+                CONTACTO / CTA
+            ================================================== -->
+            <section class="contact-cta section" id="contacto">
+                <div class="contact-cta-content">
+                    <span class="section-label">
+                        HABLEMOS
+                    </span>
+                    <h2>
+                        ¿Tienes alguna pregunta?
+                    </h2>
+                    <p>
+                        Estamos disponibles para ayudarte y
+                        brindarte toda la información que necesites.
+                    </p>
+                    <div class="contact-buttons">
+                        <a href="#" class="btn btn-primary">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            Escríbenos por WhatsApp
+                        </a>
+                        <a href="#" class="btn btn-secondary">
+                            <i class="fa-brands fa-instagram"></i>
+                            Instagram
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- =====================================================
+            FOOTER
+        ====================================================== -->
+        <footer class="footer">
+            <div class="footer-container">
+                <!-- Marca -->
+                <div class="footer-brand">
+                    <a href="#inicio" class="logo footer-logo">
+                        <img src="static/img/Logo_DamaLuna.png" alt="Logo">
+                        <span>DamaLuna</span>
+                    </a>
+                    <p>
+                        Comodidad, estilo y pequeños momentos
+                        para disfrutar.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" aria-label="TikTok">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Navegación -->
+                <div class="footer-column">
+                    <h3>
+                        Navegación
+                    </h3>
+                    <a href="#inicio">Inicio</a>
+                    <a href="#categorias">Categorías</a>
+                    <a href="#destacados">Destacados</a>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+                <!-- Información -->
+                <div class="footer-column">
+                    <h3>
+                        Información
+                    </h3>
+                    <a href="#">Envíos</a>
+                    <a href="#">Cambios y devoluciones</a>
+                </div>
+                <!-- Contacto -->
+                <div class="footer-column">
+                    <h3>
+                        Contáctanos
+                    </h3>
+                    <a href="#">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        WhatsApp
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                        Instagram
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    © 2026 DamaLuna. Todos los derechos reservados.
+                </p>
+            </div>
+        </footer>
+
+        <!-- =====================================================
+            BOTÓN VOLVER ARRIBA
+        ====================================================== -->
+        <button class="back-to-top"
+                id="back-to-top"
+                aria-label="Volver arriba">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+
+        <!-- =====================================================
+            JAVASCRIPT
+        ====================================================== -->
+        <script src="static/js/index.js"></script>
+    </body>
+</html>
