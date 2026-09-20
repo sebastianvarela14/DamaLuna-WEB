@@ -1,0 +1,404 @@
+/* =========================================================
+   HERO PERSONALIZADOS
+========================================================= */
+.personalizados-hero {
+    min-height: 560px;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    background: var(--rosa-suave);
+}
+
+.personalizados-hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px max(40px, calc((100vw - var(--contenedor)) / 2));
+    padding-right: 60px;
+}
+
+.personalizados-hero-content h1 {
+    max-width: 600px;
+    margin-bottom: 25px;
+    font-family: var(--fuente-elegante);
+    font-size: clamp(3.2rem, 5vw, 5.3rem);
+    font-weight: 500;
+    line-height: 1.05;
+}
+
+.personalizados-hero-content > p {
+    max-width: 500px;
+    margin-bottom: 32px;
+    color: var(--gris-oscuro);
+    font-size: 1rem;
+}
+
+.personalizados-hero-image {
+    min-height: 560px;
+    overflow: hidden;
+}
+
+.personalizados-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* =========================================================
+   INTRODUCCIÓN
+========================================================= */
+.personalizados-intro {
+    padding-bottom: 110px;
+}
+
+.personalizados-intro-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.intro-card {
+    padding: 35px 30px;
+    background: var(--rosa-suave);
+    text-align: center;
+    transition:
+        transform var(--transicion),
+        box-shadow var(--transicion);
+}
+
+.intro-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(201, 120, 141, 0.12);
+}
+
+.intro-icon {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--rosa-oscuro);
+    background: var(--blanco);
+    font-size: 1.1rem;
+}
+
+.intro-card h3 {
+    margin-bottom: 10px;
+    font-family: var(--fuente-elegante);
+    font-size: 1.35rem;
+    font-weight: 500;
+}
+
+.intro-card p {
+    color: var(--gris);
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+/* =========================================================
+   CÓMO FUNCIONA
+========================================================= */
+.how-it-works {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--crema);
+}
+
+.how-it-works-image {
+    min-height: 650px;
+    overflow: hidden;
+}
+
+.how-it-works-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.how-it-works-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 10%;
+}
+
+.how-it-works-content h2 {
+    max-width: 500px;
+    margin-bottom: 40px;
+    font-family: var(--fuente-elegante);
+    font-size: clamp(2.4rem, 4vw, 3.8rem);
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+/* =========================================================
+   PASOS
+========================================================= */
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.step {
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    gap: 18px;
+    align-items: flex-start;
+}
+
+.step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border: 1px solid var(--rosa-principal);
+    color: var(--rosa-oscuro);
+    font-family: var(--fuente-elegante);
+    font-size: 0.9rem;
+}
+
+.step h3 {
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.step p {
+    max-width: 430px;
+    color: var(--gris);
+    font-size: 0.82rem;
+    line-height: 1.6;
+}
+
+/* =========================================================
+   IDEAS
+========================================================= */
+.personalizados-ideas {
+    padding-bottom: 110px;
+}
+
+.ideas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.idea-card {
+    min-width: 0;
+    background: var(--blanco);
+}
+
+.idea-image {
+    aspect-ratio: 0.82;
+    overflow: hidden;
+    background: var(--rosa-suave);
+}
+
+.idea-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.idea-card:hover .idea-image img {
+    transform: scale(1.04);
+}
+
+.idea-info {
+    padding: 18px 5px 0;
+}
+
+.idea-info h3 {
+    margin-bottom: 5px;
+    font-family: var(--fuente-elegante);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.idea-info p {
+    color: var(--gris);
+    font-size: 0.78rem;
+    line-height: 1.55;
+}
+
+/* =========================================================
+   CONTACTO PERSONALIZADO
+========================================================= */
+.personalizados-contact {
+    padding: 110px 20px;
+    background: var(--rosa-suave);
+    text-align: center;
+}
+
+.personalizados-contact-content {
+    width: min(100%, 750px);
+    margin: 0 auto;
+}
+
+.personalizados-contact-content h2 {
+    margin-bottom: 18px;
+    font-family: var(--fuente-elegante);
+    font-size: clamp(2.4rem, 4vw, 3.8rem);
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.personalizados-contact-content p {
+    max-width: 570px;
+    margin: 0 auto 30px;
+    color: var(--gris);
+}
+
+.personalizados-contact .contact-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+@media (max-width: 1050px) {
+    .personalizados-hero-content {
+        padding-left: 40px;
+    }
+    .personalizados-intro-grid {
+        gap: 18px;
+    }
+    .ideas-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 20px;
+    }
+}
+
+/* =========================================================
+   TABLET PEQUEÑA
+========================================================= */
+@media (max-width: 800px) {
+    /* Hero */
+    .personalizados-hero {
+        min-height: auto;
+        grid-template-columns: 1fr;
+    }
+    .personalizados-hero-content {
+        padding: 70px 30px;
+    }
+    .personalizados-hero-image {
+        min-height: 500px;
+    }
+    /* Introducción */
+    .personalizados-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    /* Cómo funciona */
+    .how-it-works {
+        grid-template-columns: 1fr;
+    }
+    .how-it-works-image {
+        min-height: 500px;
+    }
+    .how-it-works-content {
+        padding: 65px 30px;
+    }
+    /* Ideas */
+    .ideas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* =========================================================
+   CELULAR
+========================================================= */
+@media (max-width: 550px) {
+    /* Hero */
+    .personalizados-hero-content {
+        padding: 55px 20px;
+    }
+    .personalizados-hero-content h1 {
+        font-size: 3rem;
+    }
+    .personalizados-hero-content > p {
+        font-size: 0.9rem;
+    }
+    .personalizados-hero-image {
+        min-height: 420px;
+    }
+    /* Introducción */
+    .personalizados-intro {
+        padding-bottom: 70px;
+    }
+    .intro-card {
+        padding: 30px 22px;
+    }
+    /* Cómo funciona */
+    .how-it-works-image {
+        min-height: 380px;
+    }
+    .how-it-works-content {
+        padding: 55px 25px;
+    }
+    .how-it-works-content h2 {
+        margin-bottom: 30px;
+        font-size: 2.5rem;
+    }
+    .steps {
+        gap: 25px;
+    }
+    .step {
+        grid-template-columns: 48px 1fr;
+        gap: 13px;
+    }
+    .step-number {
+        width: 43px;
+        height: 43px;
+    }
+    /* Ideas */
+    .personalizados-ideas {
+        padding-bottom: 70px;
+    }
+    .ideas-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px 12px;
+    }
+    .idea-info {
+        padding-top: 12px;
+    }
+    .idea-info h3 {
+        font-size: 1.05rem;
+    }
+    .idea-info p {
+        font-size: 0.73rem;
+    }
+    /* Contacto */
+    .personalizados-contact {
+        padding: 75px 20px;
+    }
+    .personalizados-contact-content h2 {
+        font-size: 2.5rem;
+    }
+    .personalizados-contact .contact-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .personalizados-contact .contact-buttons .btn {
+        width: 100%;
+    }
+}
+
+/* =========================================================
+   CELULARES MUY PEQUEÑOS
+========================================================= */
+@media (max-width: 380px) {
+    .ideas-grid {
+        grid-template-columns: 1fr;
+    }
+    .idea-image {
+        aspect-ratio: 0.9;
+    }
+}

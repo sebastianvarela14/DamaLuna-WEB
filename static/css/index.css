@@ -467,6 +467,54 @@ button {
 }
 
 /* =========================================================
+   PERSONALIZADOS
+========================================================= */
+
+.personalizados {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    background: var(--crema);
+}
+
+.personalizados-image {
+    min-height: 560px;
+    overflow: hidden;
+}
+
+.personalizados-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.personalizados-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px 10%;
+}
+
+.personalizados-content h2 {
+    max-width: 500px;
+    margin-bottom: 22px;
+    font-family: var(--fuente-elegante);
+    font-size: clamp(2.3rem, 4vw, 3.8rem);
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.personalizados-content p {
+    max-width: 480px;
+    margin-bottom: 15px;
+    color: var(--gris);
+}
+
+.personalizados-content .btn {
+    align-self: flex-start;
+    margin-top: 15px;
+}
+
+/* =========================================================
    BANNER PRINCIPAL
 ========================================================= */
 .featured-banner {
@@ -702,6 +750,43 @@ button {
 }
 
 /* =========================================================
+   NOTA DE DISPONIBILIDAD
+========================================================= */
+.catalog-note {
+    padding: 28px 20px;
+    background: var(--blanco);
+    border-top: 1px solid var(--borde);
+    border-bottom: 1px solid var(--borde);
+}
+
+.catalog-note-content {
+    width: min(100%, 900px);
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 12px;
+    color: var(--gris);
+    text-align: center;
+    font-size: 0.78rem;
+    line-height: 1.6;
+}
+
+.catalog-note-content i {
+    flex-shrink: 0;
+    margin-top: 3px;
+    color: var(--rosa-oscuro);
+}
+
+.catalog-note-content p {
+    max-width: 800px;
+}
+
+.catalog-note-content strong {
+    color: var(--gris-oscuro);
+}
+
+/* =========================================================
    CONTACTO
 ========================================================= */
 .contact-cta {
@@ -861,6 +946,79 @@ button {
 }
 
 /* =========================================================
+   BOTONES FLOTANTES DE CONTACTO
+========================================================= */
+.floating-contact {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 900;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: bottom var(--transicion);
+}
+
+.floating-button {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--blanco);
+    text-decoration: none;
+    position: relative;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.16);
+    transition:
+        transform var(--transicion),
+        box-shadow var(--transicion);
+}
+
+.floating-label {
+    position: absolute;
+    right: 56px;
+    top: 50%;
+    transform: translate(8px, -50%);
+    padding: 7px 12px;
+    border-radius: 4px;
+    color: var(--blanco);
+    background: rgba(0, 0, 0, 0.7);
+    font-size: 0.78rem;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity var(--transicion),
+        visibility var(--transicion),
+        transform var(--transicion);
+}
+
+.floating-button i {
+    font-size: 1.15rem;
+}
+
+.floating-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 9px 24px rgba(0, 0, 0, 0.22);
+}
+
+.floating-button:hover .floating-label {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0, -50%);
+}
+
+.floating-whatsapp {
+    background: #25d366;
+}
+
+.floating-phone {
+    background: var(--rosa-oscuro);
+}
+
+/* =========================================================
    BOTÓN VOLVER ARRIBA
 ========================================================= */
 .back-to-top {
@@ -868,20 +1026,26 @@ button {
     right: 25px;
     bottom: 25px;
     z-index: 900;
-    width: 45px;
-    height: 45px;
+    width: 46px;
+    height: 46px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none;
+    border-radius: 50%;
     color: var(--blanco);
-    background: var(--rosa-oscuro);
+    background: rgb(228, 77, 127);
+    box-shadow: 0 6px 20px rgba(201, 120, 141, 0.28);
     opacity: 0;
     visibility: hidden;
-    transform: translateY(10px);
+    transform: translateY(12px);
+    cursor: pointer;
     transition:
         opacity var(--transicion),
         visibility var(--transicion),
-        transform var(--transicion);
+        transform var(--transicion),
+        background var(--transicion),
+        box-shadow var(--transicion);
 }
 
 .back-to-top.show {
@@ -892,6 +1056,53 @@ button {
 
 .back-to-top:hover {
     background: var(--negro);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+    transform: translateY(-3px);
+}
+
+.back-to-top i {
+    font-size: 0.9rem;
+}
+
+/* =========================================================
+   MOVER BOTONES CUANDO APARECE IR AL TOP
+========================================================= */
+body:has(.back-to-top.show) .floating-contact {
+    bottom: 83px;
+}
+
+/* =========================================================
+   BOTÓN VOLVER A CATEGORÍAS
+========================================================= */
+.category-back {
+    width: min(100% - 40px, var(--contenedor));
+    margin: 25px auto 0;
+}
+
+.category-back a {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: var(--gris-oscuro);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition:
+        color var(--transicion),
+        transform var(--transicion);
+}
+
+.category-back a i {
+    font-size: 0.8rem;
+    transition: transform var(--transicion);
+}
+
+.category-back a:hover {
+    color: var(--rosa-oscuro);
+}
+
+.category-back a:hover i {
+    transform: translateX(-4px);
 }
 
 /* =========================================================
@@ -1119,12 +1330,38 @@ button {
     .footer-column a {
         font-size: 0.75rem;
     }
-    /* Volver arriba */
+    .floating-contact {
+        right: 18px;
+        bottom: 18px;
+        gap: 10px;
+    }
+    .floating-button,
     .back-to-top {
-        right: 15px;
-        bottom: 15px;
-        width: 40px;
-        height: 40px;
+        width: 44px;
+        height: 44px;
+    }
+    body:has(.back-to-top.show) .floating-contact {
+        bottom: 72px;
+    }
+    .back-to-top {
+        right: 18px;
+        bottom: 18px;
+    }
+    .personalizados-image {
+        min-height: 360px;
+    }
+    .personalizados-content {
+        padding: 50px 25px;
+    }
+    .personalizados-content h2 {
+        font-size: 2.4rem;
+    }
+    .catalog-note {
+        padding: 25px 18px;
+    }
+    .catalog-note-content {
+        font-size: 0.75rem;
+        text-align: left;
     }
 }
 
@@ -1143,5 +1380,9 @@ button {
     }
     .footer-brand {
         grid-column: auto;
+    }
+    .category-back {
+        width: calc(100% - 30px);
+        margin-top: 20px;
     }
 }

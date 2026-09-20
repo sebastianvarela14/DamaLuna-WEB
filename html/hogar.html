@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta
+            name="description"
+            content="Descubre la colección DamaLuna para el hogar. Sábanas, juegos de cama, cobijas, fundas y más productos para disfrutar cada espacio con comodidad.">
+        <title>DamaLuna | Artículos para el Hogar</title>
+        <!-- Fuentes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+            rel="stylesheet">
+        <!-- Iconos -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <!-- CSS -->
+        <link rel="stylesheet" href="../static/css/index.css">
+        <link rel="stylesheet" href="../static/css/hogar.css">
+    </head>
+
+    <body>
+        <!-- =====================================================
+            BARRA SUPERIOR
+        ====================================================== -->
+        <div class="top-bar">
+            <p>
+                ✨ Envíos a todo Colombia · Compra segura · Atención personalizada
+            </p>
+        </div>
+
+        <!-- =====================================================
+            NAVBAR
+        ====================================================== -->
+        <header class="header">
+            <nav class="navbar">
+                <!-- LOGO -->
+                <a
+                    href="../index.html#inicio"
+                    class="logo navbar-logo">
+                    <img
+                        src="../static/img/Logo_DamaLuna.png"
+                        alt="Logo DamaLuna">
+                    <span>
+                        DamaLuna
+                    </span>
+                </a>
+                <!-- NAVEGACIÓN -->
+                <div class="nav-links">
+                    <a href="../index.html#inicio">
+                        Inicio
+                    </a>
+                    <a href="../index.html#categorias">
+                        Categorías
+                    </a>
+                    <a href="../index.html#destacados">
+                        Destacados
+                    </a>
+                    <a href="../index.html#nosotros">
+                        Nosotros
+                    </a>
+                    <a href="#contacto">
+                        Contacto
+                    </a>
+                </div>
+                <!-- ACCIÓN -->
+                <div class="nav-actions">
+                    <a
+                        href="#contacto"
+                        class="btn btn-primary">
+                        Contáctanos
+                    </a>
+                </div>
+                <!-- MENÚ MÓVIL -->
+                <button
+                    class="menu-toggle"
+                    id="menu-toggle"
+                    aria-label="Abrir menú"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+            <!-- MENÚ MÓVIL -->
+            <div
+                class="mobile-menu"
+                id="mobile-menu">
+                <a href="../index.html#inicio">
+                    Inicio
+                </a>
+                <a href="../index.html#categorias">
+                    Categorías
+                </a>
+                <a href="../index.html#destacados">
+                    Destacados
+                </a>
+                <a href="../index.html#nosotros">
+                    Nosotros
+                </a>
+                <a href="#contacto">
+                    Contacto
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <!-- =================================================
+                VOLVER A CATEGORÍAS
+            ================================================== -->
+            <div class="category-back">
+                <a href="../index.html#categorias">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Volver a categorías
+                </a>
+            </div><br>
+
+            <!-- =================================================
+                HERO DE CATEGORÍA
+            ================================================== -->
+            <section class="category-hero">
+                <div class="category-hero-content">
+                    <span class="section-label">
+                        COLECCIÓN
+                    </span>
+                    <h1>
+                        Artículos para el hogar
+                    </h1>
+                    <p>
+                        Detalles pensados para llenar tus espacios
+                        de comodidad, suavidad y calidez.
+                    </p>
+                </div>
+            </section>
+
+            <!-- =================================================
+                BANNER
+            ================================================== -->
+            <section class="men-banner">
+                <div class="men-banner-image">
+                    <img
+                        src="static/img/banners/hogar.jpg"
+                        alt="Artículos para el hogar DamaLuna">
+                </div>
+                <div class="men-banner-content">
+                    <span class="section-label">
+                        PARA TU HOGAR
+                    </span>
+                    <h2>
+                        Haz de cada espacio un lugar para disfrutar.
+                    </h2>
+                    <p>
+                        Encuentra productos pensados para hacer
+                        tus momentos de descanso más cómodos,
+                        cálidos y especiales.
+                    </p>
+                </div>
+            </section>
+
+            <!-- =================================================
+                PRODUCTOS
+            ================================================== -->
+            <section
+                class="men-products section"
+                id="productos">
+                <div class="section-heading">
+                    <span class="section-label">
+                        COLECCIÓN
+                    </span>
+                    <h2>
+                        Artículos para el hogar
+                    </h2>
+                    <p>
+                        Descubre opciones para vestir y
+                        complementar tus espacios.
+                    </p>
+                </div>
+                <!-- FILTROS -->
+                <div class="product-filters">
+                    <button
+                        class="filter-button active"
+                        data-filter="todos">
+                        Todos
+                    </button>
+                    <button
+                        class="filter-button"
+                        data-filter="sabanas">
+                        Sábanas
+                    </button>
+                    <button
+                        class="filter-button"
+                        data-filter="juegos-cama">
+                        Juegos de cama
+                    </button>
+                    <button
+                        class="filter-button"
+                        data-filter="cobijas">
+                        Cobijas
+                    </button>
+                    <button
+                        class="filter-button"
+                        data-filter="fundas">
+                        Fundas
+                    </button>
+                </div>
+                <!-- GRID DE PRODUCTOS -->
+                <div class="men-products-grid">
+                    <!-- =========================================
+                        PRODUCTO 1
+                    ========================================== -->
+                    <article
+                        class="men-product-card"
+                        data-category="sabanas">
+                        <div class="men-product-image">
+                            <img
+                                src="static/img/productos/hogar/producto-1.jpg"
+                                alt="Juego de sábanas DamaLuna">
+                        </div>
+                        <div class="men-product-info">
+                            <span class="product-category">
+                                SÁBANAS
+                            </span>
+                            <h3>
+                                Juego de Sábanas
+                            </h3>
+                            <p class="product-description">
+                                Suaves y cómodas para acompañar
+                                tus noches de descanso.
+                            </p>
+                            <span class="men-product-price">
+                                $119.900
+                            </span>
+                            <a
+                                href="#contacto"
+                                class="product-button">
+                                Consultar producto
+                            </a>
+                        </div>
+                    </article>
+                    <!-- =========================================
+                        PRODUCTO 2
+                    ========================================== -->
+                    <article
+                        class="men-product-card"
+                        data-category="juegos-cama">
+                        <div class="men-product-image">
+                            <img
+                                src="static/img/productos/hogar/producto-2.jpg"
+                                alt="Juego de cama DamaLuna">
+                        </div>
+                        <div class="men-product-info">
+                            <span class="product-category">
+                                JUEGOS DE CAMA
+                            </span>
+                            <h3>
+                                Juego de Cama
+                            </h3>
+                            <p class="product-description">
+                                Una opción completa para renovar
+                                y darle un toque especial a tu habitación.
+                            </p>
+                            <span class="men-product-price">
+                                $159.900
+                            </span>
+                            <a
+                                href="#contacto"
+                                class="product-button">
+                                Consultar producto
+                            </a>
+                        </div>
+                    </article>
+                    <!-- =========================================
+                        PRODUCTO 3
+                    ========================================== -->
+                    <article
+                        class="men-product-card"
+                        data-category="cobijas">
+                        <div class="men-product-image">
+                            <img
+                                src="static/img/productos/hogar/producto-3.jpg"
+                                alt="Cobija DamaLuna">
+                        </div>
+                        <div class="men-product-info">
+                            <span class="product-category">
+                                COBIJAS
+                            </span>
+                            <h3>
+                                Cobija Suave
+                            </h3>
+                            <p class="product-description">
+                                Abrigadora y confortable para
+                                disfrutar tus momentos de descanso.
+                            </p>
+                            <span class="men-product-price">
+                                $99.900
+                            </span>
+                            <a
+                                href="#contacto"
+                                class="product-button">
+                                Consultar producto
+                            </a>
+                        </div>
+                    </article>
+                    <!-- =========================================
+                        PRODUCTO 4
+                    ========================================== -->
+                    <article
+                        class="men-product-card"
+                        data-category="fundas">
+                        <div class="men-product-image">
+                            <img
+                                src="static/img/productos/hogar/producto-4.jpg"
+                                alt="Fundas para almohada DamaLuna">
+                        </div>
+                        <div class="men-product-info">
+                            <span class="product-category">
+                                FUNDAS
+                            </span>
+                            <h3>
+                                Fundas para Almohada
+                            </h3>
+                            <p class="product-description">
+                                Complementa tu cama con detalles
+                                suaves y delicados.
+                            </p>
+                            <span class="men-product-price">
+                                $49.900
+                            </span>
+                            <a
+                                href="#contacto"
+                                class="product-button">
+                                Consultar producto
+                            </a>
+                        </div>
+                    </article>
+                    <!-- =========================================
+                        PRODUCTO 5
+                    ========================================== -->
+                    <article
+                        class="men-product-card"
+                        data-category="juegos-cama">
+                        <div class="men-product-image">
+                            <img
+                                src="static/img/productos/hogar/producto-5.jpg"
+                                alt="Juego de cama completo DamaLuna">
+                        </div>
+                        <div class="men-product-info">
+                            <span class="product-category">
+                                JUEGOS DE CAMA
+                            </span>
+                            <h3>
+                                Juego de Cama Completo
+                            </h3>
+                            <p class="product-description">
+                                Una combinación pensada para
+                                renovar por completo tu habitación.
+                            </p>
+                            <span class="men-product-price">
+                                $179.900
+                            </span>
+                            <a
+                                href="#contacto"
+                                class="product-button">
+                                Consultar producto
+                            </a>
+                        </div>
+                    </article>
+                    <!-- =========================================
+                        PRODUCTO 6
+                    ========================================== -->
+                    <article
+                        class="men-product-card"
+                        data-category="cobijas">
+                        <div class="men-product-image">
+                            <img
+                                src="static/img/productos/hogar/producto-6.jpg"
+                                alt="Cobija acolchada DamaLuna">
+                        </div>
+                        <div class="men-product-info">
+                            <span class="product-category">
+                                COBIJAS
+                            </span>
+                            <h3>
+                                Cobija Acolchada
+                            </h3>
+                            <p class="product-description">
+                                Comodidad y calidez para hacer
+                                tus espacios aún más acogedores.
+                            </p>
+                            <span class="men-product-price">
+                                $129.900
+                            </span>
+                            <a
+                                href="#contacto"
+                                class="product-button">
+                                Consultar producto
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- =================================================
+                CONTACTO
+            ================================================== -->
+            <section
+                class="men-contact section"
+                id="contacto">
+                <div class="men-contact-content">
+                    <span class="section-label">
+                        ¿TIENES ALGUNA PREGUNTA?
+                    </span>
+                    <h2>
+                        Dale un nuevo aire a tu hogar.
+                    </h2>
+                    <p>
+                        Escríbenos y te ayudaremos con información
+                        sobre disponibilidad, tamaños, colores y precios.
+                    </p>
+                    <div class="contact-buttons">
+                        <a
+                            href="#"
+                            class="btn btn-primary">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            WhatsApp
+                        </a>
+                        <a
+                            href="#"
+                            class="btn btn-outline">
+                            <i class="fa-brands fa-instagram"></i>
+                            Instagram
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main><br>
+
+        <!-- =====================================================
+            FOOTER
+        ====================================================== -->
+        <footer class="footer">
+            <div class="footer-container">
+                <!-- MARCA -->
+                <div class="footer-brand">
+                    <a
+                        href="../index.html#inicio"
+                        class="logo footer-logo">
+                        <img
+                            src="../static/img/Logo_DamaLuna.png"
+                            alt="Logo DamaLuna">
+                        <span>
+                            DamaLuna
+                        </span>
+                    </a>
+                    <p>
+                        Comodidad, suavidad y estilo para
+                        acompañarte en cada momento.
+                    </p>
+                </div>
+                <!-- NAVEGACIÓN -->
+                <div class="footer-column">
+                    <h3>
+                        Navegación
+                    </h3>
+                    <a href="../index.html#inicio">
+                        Inicio
+                    </a>
+                    <a href="../index.html#categorias">
+                        Categorías
+                    </a>
+                    <a href="#productos">
+                        Productos
+                    </a>
+                    <a href="../index.html#destacados">
+                        Destacados
+                    </a>
+                    <a href="../index.html#nosotros">
+                        Nosotros
+                    </a>
+                </div>
+                <!-- Información -->
+                <div class="footer-column">
+                    <h3>
+                        Información
+                    </h3>
+                    <a href="#">
+                        Envíos
+                    </a>
+                    <a href="#">
+                        Cambios y devoluciones
+                    </a>
+                </div>
+                <!-- CONTACTO -->
+                <div class="footer-column">
+                    <h3>
+                        Contacto
+                    </h3>
+                    <a href="#contacto">
+                        WhatsApp
+                    </a>
+                    <a href="#contacto">
+                        Instagram
+                    </a>
+                    <a href="#contacto">
+                        +57 300 000 0000
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    © 2026 DamaLuna. Todos los derechos reservados.
+                </p>
+            </div>
+        </footer>
+
+        <!-- BOTONES FLOTANTES DE CONTACTO -->
+        <div class="floating-contact">
+            <a href="https://wa.me/573000000000"
+                class="floating-button floating-whatsapp"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Contactar por WhatsApp">
+                <span class="floating-label">WhatsApp</span>
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="tel:+573000000000"
+                class="floating-button floating-phone"
+                aria-label="Llamar">
+                <span class="floating-label">Llamar</span>
+                <i class="fa-solid fa-phone"></i>
+            </a>
+        </div>
+
+        <!-- =====================================================
+            VOLVER ARRIBA
+        ====================================================== -->
+        <button
+            class="back-to-top"
+            id="back-to-top"
+            aria-label="Volver arriba">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+
+        <!-- =====================================================
+            JAVASCRIPT
+        ====================================================== -->
+        <script src="../static/js/index.js"></script>
+        <script src="../static/js/hogar.js"></script>
+
+    </body>
+</html>
