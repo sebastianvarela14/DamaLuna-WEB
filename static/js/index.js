@@ -61,3 +61,14 @@ window.addEventListener("resize", () => {
         menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
     }
 });
+
+/* =========================================================
+   WHATSAPP
+========================================================= */
+const whatsappMessage =
+    "¡Hola, DamaLuna! ☾ Descubrí su página web y quiero conocer más sobre sus diseños, referencias y tallas. ¡Gracias!";
+const whatsappLinks = document.querySelectorAll(".whatsapp-link");
+whatsappLinks.forEach(link => {
+    const baseUrl = "https://wa.me/573209624325";
+    link.href = baseUrl + "?text=" + encodeURIComponent(whatsappMessage);
+});
