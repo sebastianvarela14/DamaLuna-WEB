@@ -1241,7 +1241,19 @@ body:has(.back-to-top.show) .floating-contact {
     }
     /* Hero */
     .hero-image {
-        height: 320px;
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        overflow: hidden;
+        background: var(--blanco);
+    }
+    .hero-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: none;
+        object-fit: contain;
+        object-position: center;
     }
     .hero-content {
         padding: 25px 20px 35px;
