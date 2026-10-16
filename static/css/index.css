@@ -295,7 +295,6 @@ button {
     font-size: 0.9rem;
 }
 
-```css
 /* =========================================================
    HERO
 ========================================================= */
@@ -1242,7 +1241,7 @@ body:has(.back-to-top.show) .floating-contact {
     }
     /* Hero */
     .hero-image {
-        height: 420px;
+        height: 320px;
     }
     .hero-content {
         padding: 25px 20px 35px;
