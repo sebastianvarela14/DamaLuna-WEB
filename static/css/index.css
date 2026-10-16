@@ -1329,7 +1329,17 @@ body:has(.back-to-top.show) .floating-contact {
     }
     /* Contacto */
     .contact-cta {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
         padding: 75px 20px;
+        box-sizing: border-box;
+    }
+    .contact-cta-content {
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+        box-sizing: border-box;
     }
     .contact-buttons {
         flex-direction: column;
